@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="name_hostedcheckout">Hosted Checkout</string>
+    <string name="name_directsales">Direct Sales</string>
+    <string name="name_tokenization">Tokenization</string>
+    <string name="desc_hostedcheckout">An integrated payment page for your customer.</string>
+    <string name="desc_directsales">Checkout with AlipayHK, WeChat Pay HK.</string>
+    <string name="desc_tokenization">Save payment method for later payment.</string>
+    <string name="name_documentation">Documentation</string>
+    <string name="desc_documentation">API doc</string>
+
+    <string name="currency_hkd">HKD $</string>
+
+    <string name="title_main">BBMSL</string>
+    <string name="title_hostedcheckout">Hosted Checkout</string>
+    <string name="title_directsales">Direct Sales</string>
+    <string name="title_tokenization">Tokenization</string>
+    <string name="title_webview">WebView Presentation</string>
+    <string name="title_result">Merchant Site Result</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_documentation">Documentation</string>
+
+    <string name="mainmenu_txt_selectmethod">Please select service experience</string>
+    <string name="mainmenu_txt_resource">Resource</string>
+
+    <string name="setting_webview_title">Payment Account Data</string>
+    <string name="setting_webview_desc">You can clear the Google Pay and Alipay payment account data here.</string>
+    <string name="setting_webview_btn">Clear Saved login</string>
+    <string name="setting_setting_saved">Settings saved successfully.</string>
+    <string name="setting_login_cleared">Done. </string>
+    <string name="setting_user_id">User ID</string>
+
+    <string name="info_hostedcheckout">An integrated payment gateway for your customer.</string>
+    <string name="info_directsales">An integrated payment gateway for your customer.</string>
+    <string name="info_tokenization">Tokenize credit card for later payment. Hence, you don\'t need to input the card info manually.</string>
+
+    <string name="result_success">Payment Success</string>
+    <string name="result_failed">Payment Failed</string>
+    <string name="result_callback_page">Callback Page</string>
+
+    <string name="mertref_title">MerchantRef</string>
+    <string name="mertref_hint">(Optional)</string>
+
+    <string name="cart_title">Merchant Product Cart</string>
+    <string name="cart_item_name">Product Name</string>
+    <string name="cart_item_price">Price</string>
+    <string name="cart_item_qty">Quantity</string>
+    <string name="cart_add_item">Add Product</string>
+    <string name="cart_total">Total Amount: </string>
+    <string name="cart_edit">Edit</string>
+    <string name="cart_done">Done</string>
+
+    <string name="tokenization_token_listing">Token Listing</string>
+    <string name="tokenization_error_nocard_selected">No Token Selected</string>
+    <string name="desc_select_payment_method">Please select payment method</string>
+
+    <string name="btn_update">Update</string>
+    <string name="btn_addcard">Add Payment Method</string>
+    <string name="btn_checkout">Checkout</string>
+    <string name="btn_pay">Pay</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_error">Error</string>
+    <string name="dialog_success">Success</string>
+    <string name="dialog_fail">Failed</string>
+
+    <string name="directsales_alipay_success">Payment Success</string>
+    <string name="directsales_alipay_fail">Payment Failed</string>
+    <string name="directsales_wechatpay_success">Payment Success</string>
+    <string name="directsales_wechatpay_fail">Payment Failed</string>
+
+    <string name="tokenization_samplecard">*Please use the following Test card numbers:\n
+    Visa:   4111 1111 1111 1111\n
+    Master: 5555 5555 5555 4444</string>
+
+
+    <string name="webview_txtinfo">WebView Presentation</string>
+    <string name="webview_loading">Loading …</string>
+    <string name="webview_app_not_installed">Required App not installed.</string>
+
+    <string name="error_paramfail">input Parameters not valid</string>
+    <string name="error_apifail">Network Error, Please check your connection </string>
+    <string name="error_api_exception">Server unavailable, please try again later (ER1002) \n</string>
+    <string name="error_api_not_sucessful">Server unavailable, please try again later (ER1003) \n</string>
+    <string name="error_api_obj_null">Server unavailable, please try again later (ER1004)</string>
+    <string name="error_api_invalid_url">Server unavailable, please try again later (ER1005)</string>
+
+    <string name="error_merchantxml_parse">Merchant settings XML parse failed. Please check R/xml/merchant.xml</string>
+    <string name="error_nobrowser">Please visit %s for documentation</string>
+    <string name="error_no_pdf_handle">No available app to open PDF</string>
+
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bbmsl.payapidemo.ui.main.FragmentMain"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_hostedcheckout"
+            app:destination="@id/hostedcheckout"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation" />
+        <action
+            android:id="@+id/action_mainFragment_to_tokenization"
+            app:destination="@id/tokenization"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+        <action
+            android:id="@+id/action_mainFragment_to_directsales"
+            app:destination="@id/directsales"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentSettings"
+            app:destination="@id/fragmentSettings"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/hostedcheckout"
+        android:name="com.bbmsl.payapidemo.ui.FragmentHostedCheckout"
+        android:label="@string/title_hostedcheckout"
+        tools:layout="@layout/fragment_hostedcheckout">
+        <action
+            android:id="@+id/action_hostedcheckout_to_fragmentWebView"
+            app:destination="@id/fragmentWebView"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/directsales"
+        android:name="com.bbmsl.payapidemo.ui.FragmentDirectSale"
+        android:label="@string/title_directsales"
+        tools:layout="@layout/fragment_directsale">
+        <action
+            android:id="@+id/action_directsales_to_fragmentWebView"
+            app:destination="@id/fragmentWebView"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+        <action
+            android:id="@+id/action_directsales_to_fragmentShowResult"
+            app:destination="@id/fragmentShowResult"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tokenization"
+        android:name="com.bbmsl.payapidemo.ui.FragmentTokenization"
+        android:label="@string/title_tokenization"
+        tools:layout="@layout/fragment_tokenization">
+        <action
+            android:id="@+id/action_tokenization_to_fragmentWebView"
+            app:destination="@id/fragmentWebView"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+        <action
+            android:id="@+id/action_tokenization_to_fragmentShowResult"
+            app:destination="@id/fragmentShowResult"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentWebView"
+        android:name="com.bbmsl.payapidemo.ui.FragmentWebView"
+        android:label="@string/title_webview"
+        tools:layout="@layout/fragment_webview">
+        <argument android:name="checkoutUrl"
+            app:argType="string"
+            android:defaultValue="http://bbmsl.com" />
+        <action
+            android:id="@+id/action_fragmentWebView_to_fragmentShowResult"
+            app:destination="@id/fragmentShowResult"
+            app:popUpTo="@id/fragmentWebView"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_horizontal_animation"
+            app:exitAnim="@anim/slide_out_horizontal_animation"
+            app:popEnterAnim="@anim/slide_in_vertical_animation"
+            app:popExitAnim="@anim/slide_out_vertical_animation"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentShowResult"
+        android:name="com.bbmsl.payapidemo.ui.main.FragmentShowResult"
+        android:label="@string/title_result"
+        tools:layout="@layout/fragment_showresult">
+        <argument android:name="resultString"
+            app:argType="string"
+            android:defaultValue="" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.bbmsl.payapidemo.ui.main.FragmentSettings"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings"/>
+
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent_black">#50000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="default_bg">#F2F6F8</color>
+    <color name="colorInfoBox">#CDECEF</color>
+
+    <color name="colorPrimary">#36B3BE</color>
+    <color name="colorPrimaryDark">#21C2BA</color>
+    <color name="colorPrimaryLight">#6dfffa</color>
+
+    <color name="colorButtonYellow">#FFCF43</color>
+    <color name="colorSuccessCallback">#198754</color>
+    <color name="colorFailedCallback">#E08C28</color>
+
+    <color name="activity_bk">#FFF4F4F4</color>
+
+    </resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingVertical="5dp">
+
+    <EditText
+        android:id="@+id/edittext_itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:inputType="text"
+        android:hint="@string/cart_item_name"/>
+
+    <EditText
+        android:id="@+id/edittext_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:hint="@string/cart_item_price"/>
+
+    <EditText
+        android:id="@+id/edittext_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:hint="@string/cart_item_qty"
+        />
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:backgroundTint="@color/colorButtonYellow"
+        android:textColor="@color/black"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:text="@string/cart_edit" />
+</LinearLayout>
