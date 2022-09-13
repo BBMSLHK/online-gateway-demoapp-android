@@ -1,0 +1,15 @@
+{
+	"require": {
+		"phpseclib/phpseclib": "^3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"BBMSL_Gateway\\": "/"
+		}
+	},
+	"config": {
+		"platform": {
+			"php": "7.0"
+		}
+	}
+}
